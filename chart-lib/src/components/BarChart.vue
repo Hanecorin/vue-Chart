@@ -1,5 +1,5 @@
 <template>
-  <canvas id="myChart" width="400" height="400"></canvas>
+  <canvas id="BarChart" width="400" height="400"></canvas>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ import Chart from "chart.js";
 export default {
 
     mounted() {
-        var ctx = document.getElementById("myChart");
+        var ctx = document.getElementById("BarChart");
         // eslint-disable-next-line
         var myChart = new Chart(ctx, {
             type: 'bar',
